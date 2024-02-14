@@ -142,18 +142,6 @@ button {
     font-family: 'BlenderPro-Book';
 }
 
-.dewmenu{
-    left: 60px;
-}
-
-.feeltrain{
-    left: -webkit-calc(100% - 440px);
-}
-
-.browserSwitch:hover{
-    background-color: #31415b;
-}
-
 .pingbars{
     float: left; 
     margin-right: 5px; 

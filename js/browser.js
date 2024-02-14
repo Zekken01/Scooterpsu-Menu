@@ -587,24 +587,6 @@ function switchBrowser(browser) {
     });
 }
 
-function checkUpdate(ver) {
-    if (EDVersion == 0) {
-        setTimeout(function() {
-            checkUpdate(ver);
-        }, "500");  
-    } else {
-        ga('send', 'event', 'version', ver);
-        if (ver != EDVersion) {
-
-            swal({   
-                title: "0.6 Released!",
-                text: "2+ years in the making, but it's finally out. Go to https://www.reddit.com/r/HaloOnline/ to get the new update.",
-                type: "error", allowEscapeKey: false
-            });
-        }
-    }
-}
-
 function hasMap(map) {
     if(mapList[0].length == 0) {
         return true;

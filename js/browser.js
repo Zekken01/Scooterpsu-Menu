@@ -257,6 +257,7 @@ function buildTable(server_list){
                     var rePing = false;
                     var jqhrxServerInfo = $.getJSON("http://" + serverIP, null )
                     .done(function(serverInfo) {
+                        if (serverInfo['eldewritoVersion'] !== '0.5.1.1') return;
                         endTime = Date.now();
                         ping = Math.round((endTime - startTime) * .45);
                         if (ping > 0 && ping <= 100) {
